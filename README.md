@@ -1,5 +1,5 @@
 # HackerRank-Practice
-This repository contains my solutions to selected HackerRank problems.
+This repository contains my solutions to selected HackerRank problems. All are done in Python 3.
 
 - Each solution includes:
 
