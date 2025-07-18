@@ -1,12 +1,12 @@
 # HackerRank-Practice
 This repository contains my solutions to selected HackerRank problems.
 
-Each solution includes:
+- Each solution includes:
 
-Problem link
+- Problem link
 
-Approach
+- Approach
 
-Time & space complexity
+- Time & space complexity
 
-Clean, idiomatic Python code
+- Clean, idiomatic Python code
