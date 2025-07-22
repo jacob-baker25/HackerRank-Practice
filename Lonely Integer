@@ -1,0 +1,23 @@
+"""
+Problem: Lonely Integer
+Difficulty: Basic
+Link: https://www.hackerrank.com/challenges/one-week-preparation-kit-lonely-integer/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-two
+
+Goal: Given an array of integers, where all elements but one occur twice, find the unique element.
+
+Approach: I first sorted the list. Then I iterated by 2, and checked if each other integer was equal
+          to the integer after it. When there is one that was not, it is returned.
+
+Time Complexity: O(nlog(n))
+Space Complexity: O(n)
+
+"""
+
+def lonelyinteger(a):
+    
+    a.sort()
+    
+    for i in range(0, len(a) - 1, 2):
+        if a[i] != a[i + 1]:
+            return a[i]
+    return a[-1]
