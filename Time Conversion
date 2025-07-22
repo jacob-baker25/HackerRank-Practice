@@ -1,0 +1,19 @@
+"""
+Problem: Time Conversion
+Difficulty: Easy
+Link: https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one
+
+Goal: Given a time in -hour AM/PM format, convert it to military (24-hour) time.
+
+Approach: This code converts a 12-hour format time string to a 24-hour format time string by first parsing the input 
+          string into a datetime object using a specific format and then reformatting that datetime object into the desired 24-hour string.
+
+Time Complexity: O(1)
+Space Complexity: O(1)
+
+"""
+
+def timeConversion(s):
+    dt = datetime.strptime(s, "%I:%M:%S%p")
+    return dt.strftime("%H:%M:%S")
+
